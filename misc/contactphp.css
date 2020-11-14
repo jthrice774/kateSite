@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CONTACT ME PAGE FORM */
+
+* {
+	
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+	box-sizing: border-box;
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.column img {
+	margin-left: 100px;	
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* END CONTACT ME PAGE FORM */
