@@ -5,17 +5,19 @@
 <meta name="description" content="Kate Butchino is a Health & Wellness Freelance Copywriter. Helping to navigate the path for health seekers & health focused businesses - your guide for all things health & wellness.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="kbcss.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image" href="images/favicon.ico">
 <title>Home &mdash; Kate Butchino</title>
 </head>
 <body>
 
-<nav class="navbar">
+<nav class="navbar" id="topnav">
 <a href="home.html" class="active">Home</a>
 <a href="about.html">About</a>
 <a href="services.html">Services</a>
 <a href="portfolio.html">Portfolio</a>
 <a href="contact.html">Contact</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 </nav>
 
 <div class="main">
@@ -34,6 +36,17 @@
 <span class="freepik">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
 
 </footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 
 </body>
 </html>

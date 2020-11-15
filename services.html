@@ -6,16 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="kbcss.css" type="text/css">
 <link rel="icon" type="image" href="images/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Services &mdash; Kate Butchino</title>
 </head>
 <body>
 
-<nav class="navbar">
+<nav class="navbar" id="topnav">
 <a href="home.html">Home</a>
 <a href="about.html">About</a>
 <a href="services.html" class="active">Services</a>
 <a href="portfolio.html">Portfolio</a>
 <a href="contact.html">Contact</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 </nav>
 
 <section class="main2">
@@ -43,11 +45,13 @@ I’m sure you’ve asked yourself:</h3>
 <section id="services"><br>
 <h2>By keeping you connected to your audience through the use of:</h2>
 <ul>
-<li><img src="images/email.png" height="32" width="32">emails</li>
-<li><img src="images/newsletter.png" height="32" width="32">e-newsletters</li>
-<li><img src="images/blogging.png" height="32" width="32">blogs</li>
-<li><img src="images/script.png" height="32" width="32">video scripts</li>
-<li><img src="images/social.png" height="32" width="32">social media management</li></ul>
+<li><img src="images/email.png" height="32" width="32" />emails</li>
+<li><img src="images/newsletter.png" height="32" width="32" />e-newsletters</li>
+<li><img src="images/blogging.png" height="32" width="32" />blogs</li>
+<li><img src="images/script.png" height="32" width="32" />video scripts</li>
+<li><img src="images/social.png" height="32" width="32" />social media management</li>
+<li><img src="images/case study.png" height="32" width="32" />case studies</li>
+</ul>
 <br>
 </section>
 
@@ -59,6 +63,17 @@ I’m sure you’ve asked yourself:</h3>
 <span class="connect"><b>Connect With Me:</b></span><br> <a href="https://www.linkedin.com/in/katebutchino/"><img src="images/linkedin.png" height="52" width="52"></a>  <a href="https://www.instagram.com/accelerate.with.kate/?hl=en"><img src="images/instagram.png" height="52" width="52"></a>
 <span class="freepik">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
 </footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 
 </body>
 </html>
